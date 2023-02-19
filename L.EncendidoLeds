@@ -1,0 +1,41 @@
+//Mel-c Miranda Chón
+#define pinLED1 2
+#define pinLED2 3
+#define pinLED3 4
+#define pinLED4 5
+#define pinLED5 6
+#define pinLED6 7
+#define pinLED7 8
+#define pinLED8 9
+
+void setup() {
+pinMode(pinLED1, OUTPUT);  
+ pinMode(pinLED2, OUTPUT);  
+ pinMode(pinLED3, OUTPUT);
+ pinMode(pinLED4, OUTPUT);
+ pinMode(pinLED5, OUTPUT);
+ pinMode(pinLED6, OUTPUT);
+ pinMode(pinLED7, OUTPUT);
+ pinMode(pinLED8, OUTPUT);
+}
+
+void loop() {
+ digitalWrite(pinLED1, HIGH); // enciende
+ digitalWrite(pinLED2, HIGH); // apaga
+ digitalWrite(pinLED3, HIGH); // apaga
+ digitalWrite(pinLED4, HIGH);
+ digitalWrite(pinLED5, HIGH);
+ digitalWrite(pinLED6, HIGH);
+ digitalWrite(pinLED7, HIGH);
+ digitalWrite(pinLED8, HIGH);
+ delay(500);
+ 
+ digitalWrite(pinLED1, LOW); 
+ digitalWrite(pinLED2, LOW); 
+ digitalWrite(pinLED3, LOW);
+ digitalWrite(pinLED4, LOW);
+ digitalWrite(pinLED5, LOW);
+ digitalWrite(pinLED6, LOW);
+ digitalWrite(pinLED7, LOW);
+ digitalWrite(pinLED8, LOW);
+}
