@@ -1,0 +1,46 @@
+# LaboratorioArduino
+//Mel-c Miranda Chón
+void setup() {
+  pinMode(10, INPUT);// pin 10 entrada boton
+  pinMode(9, OUTPUT);// pin 9 salida led
+  pinMode(8, OUTPUT);// pin 8 salida led
+  pinMode(7, OUTPUT);// pin 7 salida led
+  pinMode(6, OUTPUT);// pin 6 salida led
+  pinMode(5, OUTPUT);// pin 5 salida led
+  pinMode(4, OUTPUT);// pin 4 salida led
+  pinMode(3, OUTPUT);// pin 3 salida led
+  pinMode(2, OUTPUT);// pin 2 salida led
+}
+
+void loop() {
+  if (digitalRead(10) == HIGH){ // Si la entrada está en valor alto
+  	  digitalWrite(9, HIGH);  // encender LEDS
+       delay(500);
+      digitalWrite(8, HIGH);
+      delay(500);
+      digitalWrite(7, HIGH);
+      delay(500);
+      digitalWrite(6, HIGH);
+      delay(500);
+      digitalWrite(5, HIGH);
+      delay(500);
+      digitalWrite(4, HIGH);
+      delay(500);
+      digitalWrite(3, HIGH);
+      delay(500);
+      digitalWrite(2, HIGH);
+      delay(500);
+  }
+  else {
+      digitalWrite(9, LOW);	   // apagar LEDS
+      delay(100);
+      digitalWrite(8, LOW);
+      digitalWrite(7, LOW);
+      digitalWrite(6, LOW);
+      digitalWrite(5, LOW);
+      digitalWrite(4, LOW);
+      digitalWrite(3, LOW);
+      digitalWrite(2, LOW);
+      delay(100);
+  }
+}
