@@ -21,8 +21,8 @@ pinMode(pinLED1, OUTPUT);
 
 void loop() {
  digitalWrite(pinLED1, HIGH); // enciende
- digitalWrite(pinLED2, HIGH); // apaga
- digitalWrite(pinLED3, HIGH); // apaga
+ digitalWrite(pinLED2, HIGH); 
+ digitalWrite(pinLED3, HIGH); 
  digitalWrite(pinLED4, HIGH);
  digitalWrite(pinLED5, HIGH);
  digitalWrite(pinLED6, HIGH);
@@ -30,7 +30,7 @@ void loop() {
  digitalWrite(pinLED8, HIGH);
  delay(500);
  
- digitalWrite(pinLED1, LOW); 
+ digitalWrite(pinLED1, LOW); //Apaga
  digitalWrite(pinLED2, LOW); 
  digitalWrite(pinLED3, LOW);
  digitalWrite(pinLED4, LOW);
